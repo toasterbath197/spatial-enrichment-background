@@ -1,0 +1,64 @@
+# ---------------------------------------------------------------------------
+# Raw datasets (~23 GB). Not redistributed here: every one is publicly
+# deposited, and the accessions are listed in Methods 2.2 of the manuscript.
+# ---------------------------------------------------------------------------
+/01_*/
+/03_*/
+/04_*/
+/05_*/
+/06_*/
+/07b_*/
+/08_*/
+/_vendor/
+
+# ---------------------------------------------------------------------------
+# Generated outputs. Everything here is reproduced by running the pipeline;
+# the tables backing the manuscript's numbers are archived separately (see
+# README, "Result tables").
+# ---------------------------------------------------------------------------
+/analysis/results/
+/paper_figures/figures/
+/paper_figures/tables/
+
+# Third-party pathway definitions — see README for the exact source and commit
+/analysis/pathway_db/
+
+# Manuscript builds
+*.docx
+/node_modules/
+package-lock.json
+package.json
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Project notes, manuscript and working documents. Deliberately not published:
+# the repository is code only. Listed explicitly so that a future `git add -A`
+# cannot sweep them in.
+# ---------------------------------------------------------------------------
+00_PROJECT_NOTES*
+ADDITIONS_NOT_FROM_RESULTS.md
+CLEANUP.md
+COLLEGE_REVIEW_lit_review_and_methods.md
+JOURNAL_COMPARISON_ETASR_vs_JoT.md
+MATERIALS.md
+PAPER_EXPLAINED.md
+phase2_manifest.xlsx
+.vscode/
+_to_delete/
+
+# Manuscript build scripts — this repository is the analysis, not the typesetting
+build_jot_paper.js
+build_jot_methods.js
+build_paper_simplified.js
+build_notes_html.py
+analysis/scripts/make_manuscript_figures.py
+_gitjunk/
